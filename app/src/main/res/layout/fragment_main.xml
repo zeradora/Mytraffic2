@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Content-->
+    <LinearLayout
+        android:background="#8cffffff"
+        android:padding="@dimen/padding"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--Logo-->
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:layout_width="@dimen/logo"
+            android:layout_height="@dimen/logo" />
+        <!--AppName-->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/h1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title_thai_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#654321"/>
+        <!--TextField-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--TextField-->
+            <EditText
+                android:id="@+id/edtMoney"
+                android:layout_gravity="center_vertical"
+                android:inputType="number"
+                android:hint="THB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--Button-->
+        <Button
+            android:id="@+id/btnExchange"
+            android:text="Exchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
